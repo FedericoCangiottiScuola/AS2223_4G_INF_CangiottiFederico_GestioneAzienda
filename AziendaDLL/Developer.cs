@@ -10,6 +10,7 @@
             this.lastName = lastName;
             this.age = age;
             this.salary = salary;
+            role = "Developer";
 
             this.programmingLanguages = programmingLanguages;
         }
