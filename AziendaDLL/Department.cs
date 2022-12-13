@@ -15,6 +15,8 @@
             this.nMaxEmployees = nMaxEmployees;
             nEmployees = 0;
             employees = new List<Employee>();
+            employees.Add(departmentHead);
+            nEmployees++;
         }
 
         public bool AddEmployee(Employee employee)
