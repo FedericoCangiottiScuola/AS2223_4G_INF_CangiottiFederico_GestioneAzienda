@@ -23,7 +23,7 @@
 
         public bool AddEmployee(Employee employee)
         {
-            if (nEmployees < nMaxEmployees)
+            if (nEmployees+1 <= nMaxEmployees)
             {
                 employees.Add(employee);
                 nEmployees++;
