@@ -1,6 +1,6 @@
 ﻿namespace AziendaDLL
 {
-    public class Developer
+    public class Developer : Employee
     {
         List<string> programmingLanguages;
 

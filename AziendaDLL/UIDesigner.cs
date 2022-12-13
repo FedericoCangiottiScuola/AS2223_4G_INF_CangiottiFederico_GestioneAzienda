@@ -1,6 +1,6 @@
 ﻿namespace AziendaDLL
 {
-    public class UIDesigner
+    public class UIDesigner : Employee
     {
         List<string> designPrograms;
 

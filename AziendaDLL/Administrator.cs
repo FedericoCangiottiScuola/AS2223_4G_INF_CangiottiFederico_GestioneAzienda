@@ -1,6 +1,6 @@
 ﻿namespace AziendaDLL
 {
-    public class Administrator
+    public class Administrator : Employee
     {
         int ageExperience;
 
