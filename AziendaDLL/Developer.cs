@@ -14,5 +14,12 @@
 
             this.programmingLanguages = programmingLanguages;
         }
+
+        public override string ToString()
+        {
+            string ris = $"\tFirstname: {firstName}\n\tLastname: {lastName}\n\tAge: {age}\n\tSalary: {salary}\n\tRole: {role}\n\tProgramming languages: ";
+            ris += string.Join(", ", programmingLanguages);
+            return ris;
+        }
     }
 }

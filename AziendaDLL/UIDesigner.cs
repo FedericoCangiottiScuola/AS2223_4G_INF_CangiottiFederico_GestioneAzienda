@@ -14,5 +14,12 @@
 
             this.designPrograms = designPrograms;
         }
+
+        public override string ToString()
+        {
+            string ris = $"\tFirstname: {firstName}\n\tLastname: {lastName}\n\tAge: {age}\n\tSalary: {salary}\n\tRole: {role}\n\tDesign programs: ";
+            ris += string.Join(", ", designPrograms);
+            return ris;
+        }
     }
 }

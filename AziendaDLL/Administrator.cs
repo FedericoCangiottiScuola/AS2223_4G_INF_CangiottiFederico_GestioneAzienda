@@ -2,7 +2,7 @@
 {
     public class Administrator : Employee
     {
-        int ageExperience;
+        int yearsExperience;
 
         public Administrator(string firstName, string lastName, int age, float salary, int ageExperience)
         {
@@ -12,7 +12,12 @@
             this.salary = salary;
             role = "Administrator";
 
-            this.ageExperience = ageExperience;
+            this.yearsExperience = ageExperience;
+        }
+
+        public override string ToString()
+        {
+            return $"\tFirstname: {firstName}\n\tLastname: {lastName}\n\tAge: {age}\n\tSalary: {salary}\n\tRole: {role}\n\tYears of experience: {yearsExperience}";
         }
     }
 }

@@ -39,9 +39,11 @@
         {
             string ris = "";
             int i = 1;
+
+            ris += $"\nDepartment name: {name}\nMax employees: {nMaxEmployees}\nEmployees: {nEmployees}\n";
             foreach(Employee emp in employees)
             {
-                ris += $"{i}) {emp}";
+                ris += $"{i}) {emp}\n\n";
                 i++;
             }
             return ris;
