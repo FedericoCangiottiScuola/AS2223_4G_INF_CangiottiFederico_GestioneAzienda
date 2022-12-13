@@ -1,4 +1,4 @@
-namespace NUnitTest
+namespace EnterpriseTest
 {
     public class Tests
     {
