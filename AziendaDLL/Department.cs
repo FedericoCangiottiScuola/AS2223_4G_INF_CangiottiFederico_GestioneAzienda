@@ -68,7 +68,7 @@
         }
 
         /// <summary>
-        /// Incrementa il limite dei dipendenti in un reparto
+        /// Incrementa il limite dei dipendenti in un reparto se la nuova lunghezza è maggiore della precedente
         /// </summary>
         /// <param name="newLength"></param>
         /// <returns>Restituisce l'esito della operazione: true(riuscita), false(non riuscita)</returns>
