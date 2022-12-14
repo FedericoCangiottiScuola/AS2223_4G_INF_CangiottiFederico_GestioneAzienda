@@ -13,7 +13,9 @@ namespace AS2223_4G_INF_CangiottiFederico_GestioneAzienda
 
             Console.WriteLine(dipartimento.PrintInformations());    // stampa i dati del reparto
 
-            dipartimento.ExpandDepartment(5);   // incrementa il numero massimo di dipendenti
+            Console.WriteLine(dipartimento.ExpandDepartment(5));   // incrementa il numero massimo di dipendenti se la nuova lunghezza è maggiore
+
+            dipartimento.AddEmployee(uidesigner);
 
             Console.WriteLine(dipartimento.PrintInformations());    // stampa i dati del reparto
 

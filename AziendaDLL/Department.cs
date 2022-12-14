@@ -54,9 +54,16 @@
             return employees;
         }
 
-        public void ExpandDepartment(int newLength)
+        public bool ExpandDepartment(int newLength)
         {
-            nMaxEmployees = newLength;
+            if (newLength > nMaxEmployees)
+            {
+                nMaxEmployees = newLength;
+                return true;
+            } else
+            {
+                return false;
+            }
         }
     }
 }
