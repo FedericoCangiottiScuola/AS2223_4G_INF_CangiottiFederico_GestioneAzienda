@@ -22,6 +22,8 @@ namespace AS2223_4G_INF_CangiottiFederico_GestioneAzienda
             Console.WriteLine(dipartimento.AddEmployee(uidesigner));   // non si può inserire
 
             Console.WriteLine(dipartimento.PrintInformations()); // stampa i dati del dipartimento
+
+            List<Employee> backup = dipartimento.GetEmployees();
         }
     }
 }

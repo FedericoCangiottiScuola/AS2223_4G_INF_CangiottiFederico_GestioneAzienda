@@ -49,6 +49,11 @@
             return ris;
         }
 
+        public List<Employee> GetEmployees()
+        {
+            return employees;
+        }
+
         public void ExpandDepartment(int newLength)
         {
             nMaxEmployees = newLength;
