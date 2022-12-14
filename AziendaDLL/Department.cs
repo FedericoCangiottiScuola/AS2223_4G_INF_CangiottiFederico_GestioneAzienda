@@ -35,7 +35,7 @@
             }
         }
 
-        public string GetEmployees()
+        public string PrintInformations()
         {
             string ris = "";
             int i = 1;
@@ -43,7 +43,7 @@
             ris += $"\nDepartment name: {name}\nMax employees: {nMaxEmployees}\nEmployees: {nEmployees}\n";
             foreach(Employee emp in employees)
             {
-                ris += $"{i}) {emp}\n\n";
+                ris += $"{i}) {emp.ToString()}\n\n";
                 i++;
             }
             return ris;
