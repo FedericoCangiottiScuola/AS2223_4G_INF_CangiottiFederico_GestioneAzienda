@@ -21,6 +21,11 @@
             nEmployees++;
         }
 
+        /// <summary>
+        /// Aggiunge un dipendente alla lista della classe Department
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns>Restituisce l'esito della operazione: true(riuscita), false(non riuscita)</returns>
         public bool AddEmployee(Employee employee)
         {
             if (nEmployees+1 <= nMaxEmployees)
@@ -35,6 +40,10 @@
             }
         }
 
+        /// <summary>
+        /// Recupera tutte le informazioni utili e le concatena in una stringa formattata
+        /// </summary>
+        /// <returns>Stringa con informazioni formattate</returns>
         public string PrintInformations()
         {
             string ris = "";
@@ -49,11 +58,20 @@
             return ris;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns>Lista dipendenti</returns>
         public List<Employee> GetEmployees()
         {
             return employees;
         }
 
+        /// <summary>
+        /// Incrementa il limite dei dipendenti in un reparto
+        /// </summary>
+        /// <param name="newLength"></param>
+        /// <returns>Restituisce l'esito della operazione: true(riuscita), false(non riuscita)</returns>
         public bool ExpandDepartment(int newLength)
         {
             if (newLength > nMaxEmployees)

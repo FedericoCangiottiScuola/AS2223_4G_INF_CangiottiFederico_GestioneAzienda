@@ -15,6 +15,10 @@
             this.designPrograms = designPrograms;
         }
 
+        /// <summary>
+        /// Override del metodo ToString() adattato alla classe UIDesigner
+        /// </summary>
+        /// <returns>Restituisce nome, cognome, età, salario, ruolo e programmi di grafica</returns>
         public override string ToString()
         {
             string ris = $"\tFirstname: {firstName}\n\tLastname: {lastName}\n\tAge: {age}\n\tSalary: {salary}\n\tRole: {role}\n\tDesign programs: ";

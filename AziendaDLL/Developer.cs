@@ -15,6 +15,10 @@
             this.programmingLanguages = programmingLanguages;
         }
 
+        /// <summary>
+        /// Override del metodo ToString() adattato alla classe Developer
+        /// </summary>
+        /// <returns>Restituisce nome, cognome, età, salario, ruolo e linguaggi di programmazione</returns>
         public override string ToString()
         {
             string ris = $"\tFirstname: {firstName}\n\tLastname: {lastName}\n\tAge: {age}\n\tSalary: {salary}\n\tRole: {role}\n\tProgramming languages: ";
