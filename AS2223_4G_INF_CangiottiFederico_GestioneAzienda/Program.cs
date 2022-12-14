@@ -11,19 +11,13 @@ namespace AS2223_4G_INF_CangiottiFederico_GestioneAzienda
             Administrator admin = new Administrator("Alberto", "Migani", 47, (float)2500.54, 8);
             Department dipartimento = new Department("Prova", admin, 3);
 
-            Console.WriteLine(dipartimento.AddEmployee(developer));    // si può inserire
-            Console.WriteLine(dipartimento.AddEmployee(uidesigner));   // si può inserire
-            Console.WriteLine(dipartimento.AddEmployee(uidesigner));   // non si può inserire
+            Console.WriteLine(dipartimento.PrintInformations());    // stampa i dati del reparto
 
             dipartimento.ExpandDepartment(5);   // incrementa il numero massimo di dipendenti
 
-            Console.WriteLine(dipartimento.AddEmployee(uidesigner));   // si può inserire
-            Console.WriteLine(dipartimento.AddEmployee(uidesigner));   // si può inserire
-            Console.WriteLine(dipartimento.AddEmployee(uidesigner));   // non si può inserire
+            Console.WriteLine(dipartimento.PrintInformations());    // stampa i dati del reparto
 
-            Console.WriteLine(dipartimento.PrintInformations()); // stampa i dati del dipartimento
-
-            List<Employee> backup = dipartimento.GetEmployees();
+            List<Employee> backup = dipartimento.GetEmployees();    // restituisce la lista dei dipendenti del reparto
         }
     }
 }
