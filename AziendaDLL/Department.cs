@@ -3,20 +3,20 @@
     public class Department
     {
         string name;
-        Employee departmentHead;
+        Employee headDepartment;
         int nMaxEmployees;
         int nEmployees;
         List<Employee> employees;
 
-        public Department(string name, Employee departmentHead, int nMaxEmployees)
+        public Department(string name, Employee headDepartment, int nMaxEmployees)
         {
             this.name = name;
-            this.departmentHead = departmentHead;
+            this.headDepartment = headDepartment;
             this.nMaxEmployees = nMaxEmployees;
             nEmployees = 0;
             employees = new List<Employee>
             {
-                departmentHead
+                headDepartment
             };
             nEmployees++;
         }
