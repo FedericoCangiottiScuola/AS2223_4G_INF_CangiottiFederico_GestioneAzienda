@@ -52,7 +52,7 @@
             ris += $"\nDepartment name: {name}\nMax employees: {nMaxEmployees}\nEmployees: {nEmployees}\n";
             foreach(Employee emp in employees)
             {
-                ris += $"{i}) {emp.ToString()}\n\n";
+                ris += $"{i}) {emp.Description()}\n\n";
                 i++;
             }
             return ris;

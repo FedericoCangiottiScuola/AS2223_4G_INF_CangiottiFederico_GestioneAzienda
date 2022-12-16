@@ -16,10 +16,10 @@
         }
 
         /// <summary>
-        /// Override del metodo ToString() adattato alla classe UIDesigner
+        /// Override del metodo Description() adattato alla classe UIDesigner
         /// </summary>
         /// <returns>Restituisce nome, cognome, età, salario, ruolo e programmi di grafica</returns>
-        public override string ToString()
+        public override string Description()
         {
             string ris = $"\tFirstname: {firstName}\n\tLastname: {lastName}\n\tAge: {age}\n\tSalary: {salary}\n\tRole: {role}\n\tDesign programs: ";
             ris += string.Join(", ", designPrograms);

@@ -16,10 +16,10 @@
         }
 
         /// <summary>
-        /// Override del metodo ToString() adattato alla classe Administration
+        /// Override del metodo Description() adattato alla classe Administration
         /// </summary>
         /// <returns>Restituisce nome, cognome, età, salario, ruolo e anni di esperienza</returns>
-        public override string ToString()
+        public override string Description()
         {
             return $"\tFirstname: {firstName}\n\tLastname: {lastName}\n\tAge: {age}\n\tSalary: {salary}\n\tRole: {role}\n\tYears of experience: {yearsOfExperience}";
         }
