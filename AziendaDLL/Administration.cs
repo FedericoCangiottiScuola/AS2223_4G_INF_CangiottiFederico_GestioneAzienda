@@ -1,22 +1,22 @@
 ﻿namespace AziendaDLL
 {
-    public class Administrator : Employee
+    public class Administration : Employee
     {
         int yearsExperience;
 
-        public Administrator(string firstName, string lastName, int age, float salary, int ageExperience)
+        public Administration(string firstName, string lastName, int age, float salary, int ageExperience)
         {
             this.firstName = firstName;
             this.lastName = lastName;
             this.age = age;
             this.salary = salary;
-            role = "Administrator";
+            role = "Administration";
 
             this.yearsExperience = ageExperience;
         }
 
         /// <summary>
-        /// Override del metodo ToString() adattato alla classe Administrator
+        /// Override del metodo ToString() adattato alla classe Administration
         /// </summary>
         /// <returns>Restituisce nome, cognome, età, salario, ruolo e anni di esperienza</returns>
         public override string ToString()

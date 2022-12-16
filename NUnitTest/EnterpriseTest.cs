@@ -12,7 +12,7 @@ namespace EnterpriseTest
         [Test]
         public void AddEmployee_Test()
         {
-            Administrator administrator = new Administrator("Orazio", "Rossi", 46, (float)1746.89, 8);
+            Administration administrator = new Administration("Orazio", "Rossi", 46, (float)1746.89, 8);
 
             Department department = new Department("test", administrator, 4);
 

@@ -8,8 +8,8 @@ namespace AS2223_4G_INF_CangiottiFederico_GestioneAzienda
         {
             Developer developer = new Developer("Elia", "Rossi", 24, (float)1335.23, new List<string> { "javascript","C#" });
             UIDesigner uidesigner = new UIDesigner("Ugo", "Bianchi", 31, (float)1420.69, new List<string> { "Adobe Photoshop","Adobe Illustrator","Figma" });
-            Administrator administrator = new Administrator("Alberto", "Migani", 47, (float)2500.54, 8);
-            Department reparto = new Department("Grafica", administrator, 3);
+            Administration administration = new Administration("Alberto", "Migani", 47, (float)2500.54, 8);
+            Department reparto = new Department("Grafica", administration, 3);
 
             Console.WriteLine(reparto.PrintInformations());    // stampa i dati del reparto
 
