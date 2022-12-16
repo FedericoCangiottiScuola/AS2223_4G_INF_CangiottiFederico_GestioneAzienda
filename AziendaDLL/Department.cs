@@ -44,7 +44,7 @@
         /// Recupera tutte le informazioni utili e le concatena in una stringa formattata
         /// </summary>
         /// <returns>Stringa con informazioni formattate</returns>
-        public string PrintInformations()
+        public string GetInformations()
         {
             string ris = "";
             int i = 1;

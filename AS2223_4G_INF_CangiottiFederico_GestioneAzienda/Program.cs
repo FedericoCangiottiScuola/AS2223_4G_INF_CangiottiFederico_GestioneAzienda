@@ -11,14 +11,14 @@ namespace AS2223_4G_INF_CangiottiFederico_GestioneAzienda
             Administration administration = new Administration("Alberto", "Migani", 47, (float)2500.54, 8);
             Department reparto = new Department("Grafica", administration, 3);
 
-            Console.WriteLine(reparto.PrintInformations());    // stampa i dati del reparto
+            Console.WriteLine(reparto.GetInformations());    // recupera e stampa i dati del reparto
 
             Console.WriteLine(reparto.ExpandDepartment(5));   // incrementa il numero massimo di dipendenti se la nuova lunghezza è maggiore
 
             reparto.AddEmployee(developer);     // aggiunge un dipendente
             reparto.AddEmployee(uidesigner);
 
-            Console.WriteLine(reparto.PrintInformations());    // stampa i dati del reparto
+            Console.WriteLine(reparto.GetInformations());    // recupera e stampa i dati del reparto
 
             List<Employee> backup = reparto.GetEmployees();    // restituisce la lista dei dipendenti del reparto
             Console.WriteLine(backup[0].Description());
