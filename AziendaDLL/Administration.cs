@@ -2,9 +2,9 @@
 {
     public class Administration : Employee
     {
-        int yearsExperience;
+        int yearsOfExperience;
 
-        public Administration(string firstName, string lastName, int age, float salary, int ageExperience)
+        public Administration(string firstName, string lastName, int age, float salary, int yearsOfExperience)
         {
             this.firstName = firstName;
             this.lastName = lastName;
@@ -12,7 +12,7 @@
             this.salary = salary;
             role = "Administration";
 
-            this.yearsExperience = ageExperience;
+            this.yearsOfExperience = yearsOfExperience;
         }
 
         /// <summary>
@@ -21,7 +21,7 @@
         /// <returns>Restituisce nome, cognome, età, salario, ruolo e anni di esperienza</returns>
         public override string ToString()
         {
-            return $"\tFirstname: {firstName}\n\tLastname: {lastName}\n\tAge: {age}\n\tSalary: {salary}\n\tRole: {role}\n\tYears of experience: {yearsExperience}";
+            return $"\tFirstname: {firstName}\n\tLastname: {lastName}\n\tAge: {age}\n\tSalary: {salary}\n\tRole: {role}\n\tYears of experience: {yearsOfExperience}";
         }
     }
 }
