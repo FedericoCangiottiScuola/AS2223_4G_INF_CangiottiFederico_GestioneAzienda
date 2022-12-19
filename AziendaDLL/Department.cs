@@ -5,7 +5,6 @@
         string name;
         Employee headDepartment;
         int nMaxEmployees;
-        int nEmployees;
         List<Employee> employees;
 
         public Department(string name, Employee headDepartment, int nMaxEmployees)
@@ -13,12 +12,10 @@
             this.name = name;
             this.headDepartment = headDepartment;
             this.nMaxEmployees = nMaxEmployees;
-            nEmployees = 0;
             employees = new List<Employee>
             {
                 headDepartment
             };
-            nEmployees++;
         }
 
         /// <summary>
@@ -28,10 +25,9 @@
         /// <returns>Restituisce l'esito della operazione: true(riuscita), false(non riuscita)</returns>
         public bool AddEmployee(Employee employee)
         {
-            if (nEmployees+1 <= nMaxEmployees)
+            if (employees.Count+1 <= nMaxEmployees)
             {
                 employees.Add(employee);
-                nEmployees++;
                 return true;
             }
             else
@@ -49,7 +45,7 @@
             string ris = "";
             int i = 1;
 
-            ris += $"\nDepartment name: {name}\nMax employees: {nMaxEmployees}\nEmployees: {nEmployees}\n";
+            ris += $"\nDepartment name: {name}\nMax employees: {nMaxEmployees}\nEmployees: {employees.Count}\n";
             foreach(Employee emp in employees)
             {
                 ris += $"{i}) {emp.Description()}\n\n";
